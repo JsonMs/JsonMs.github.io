@@ -1893,7 +1893,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1b2e81;
+  background: #c68fff;
 }
 .feed-link,
 .chat {
@@ -2601,6 +2601,9 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+.brand {
+  color: #13daec;
 }
 .post {
   margin-top: 60px;
