@@ -301,7 +301,6 @@ hr {
   height: 3px;
   border: none;
   background-color: #ddd;
-  background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px);
 }
 blockquote {
   margin: 0;
@@ -1812,9 +1811,6 @@ img:hover {
   -moz-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
 }
-.site-author-image {
-  border-radius: 100%;
-}
 .site-author-name {
   margin: 5px 0 0;
   text-align: center;
@@ -1896,7 +1892,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb8dd;
+  background: #74dbff;
 }
 .feed-link,
 .chat {
@@ -2253,6 +2249,38 @@ img:hover {
   top: 50%;
   transform: translate(-50%, -50%);
   color: #ccc;
+}
+.copy-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #333;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  user-select: none;
+  outline: 0;
+}
+.highlight-wrap .copy-btn {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 8px;
+}
+.highlight-wrap:hover .copy-btn,
+.highlight-wrap .copy-btn:focus {
+  opacity: 1;
+}
+.highlight-wrap {
+  position: relative;
 }
 .page-archive .archive-page-counter {
   position: relative;
